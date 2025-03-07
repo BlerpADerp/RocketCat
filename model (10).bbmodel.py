@@ -72,3 +72,26 @@ public class ClientEventHandler {
         MinecraftForge.EVENT_BUS.register(new FuelBarOverlay());
     }
 }
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " B ",
+        "  M",
+        "    R"
+    ],
+    "key": {
+        "M": { "item": "minecraft:minecart" },
+        "R": { "item": "minecraft:firework_rocket" },
+        "B": { "item": "minecraft:blaze_powder" }
+    },
+    "result": {
+        "item": "yourmodid:rocket_car",
+        "count": 1
+    }
+}
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "yourmodid:textures/item/rocket_float"
+    }
+}
